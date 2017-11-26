@@ -1,7 +1,7 @@
 <html>
 <head></head>
 <body>
-<h1>Hello!</h1>
+<h1 id="hello">Hello!</h1>
 <p id="roma">My first website</p>
 <table border="0">
 <tr>
@@ -11,16 +11,13 @@
 <td><button onclick="alert('Привет, '+document.getElementById('input').value)">нажми!</button></td>
 </tr>
 </table>
-
-
-
-
-
-
-
 <script>
-// document.getElementById("roma").innerHTML = "Hello World"
+document.getElementById("hello").innerHTML = "Hello 1!"
+setInterval(function() {document.getElementById("hello").innerHTML = "Hello 2!";}, 5000)
+setInterval(function() {document.getElementById("hello").innerHTML = "Hello 3!";}, 6000)
+setInterval(function() {document.getElementById("hello").innerHTML = "Hello 4!";}, 7000)
 </script>
+
 
 <img src="botel.jpg"></img>
 <img src="TANK.jpg" style="width:1200px;height:100px;"></img> 
